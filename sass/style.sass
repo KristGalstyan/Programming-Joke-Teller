@@ -12,5 +12,39 @@ body
     flex-direction: column
     justify-content: center
     align-items: center
-    background: url('../icon/robot.gif') left/contain no-repeat
-   
+    background: url('../icon/robot.gif')
+    background-size: contain
+    background-position: left center
+    background-repeat: no-repeat
+
+
+button
+    cursor: pointer
+    outline: none
+    width: 200px
+    height: 50px
+    font-family:  'Trebuchet MS', sans-serif
+    font-size: 20px
+    color: white
+    background: #ff3482
+    border: none
+    border-radius: 5px
+    box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2)
+
+button:hover
+    filter: brightness(95%)
+
+button:active
+    transform: scale(0.98)
+
+button:disabled
+    cursor: default
+    filter: brightness(30%)
+
+// Media Query: Tablet or Smaller
+@media (max-width: 1000px)
+    .container
+        background-position: center center
+        background-size: cover
+    bottom
+        box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5)
